@@ -1,10 +1,11 @@
 import Image from "next/image";
 import LogoImage from "@/images/reshot-icon-calculator-V72YFDUG3Q.svg";
 import Button from "@/components/Button";
+import { LuExternalLink } from "react-icons/lu";
 const navbarLinks = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
+  { name: "Tools ", href: "#tools" },
   { name: "Contact", href: "#contact" },
 ];
 export default function Navbar() {
@@ -18,7 +19,7 @@ export default function Navbar() {
               alt="logo"
               className="rotate-45 w-auto md:h-auto "
             />
-            <h1 className="font-bold text-2xl text-purple-800">Credenza</h1>
+            <h1 className="font-bold text-2xl text-purple-600">Credenza</h1>
           </div>
           <div className="lg:flex justify-center items-center hidden">
             <nav className="flex gap-6 font-medium ">
@@ -48,16 +49,13 @@ export default function Navbar() {
             </svg>
 
             <Button
-              variant="secondary"
-              className="hidden md:inline-flex items-center"
-            >
-              Log In
-            </Button>
-            <Button
               variant="primary"
-              className="hidden md:inline-flex items-center"
+              className="hidden md:flex md:gap-2 items-center text-white"
             >
-              Sign Up
+              Start now{"  "}
+              <span>
+                <LuExternalLink />
+              </span>
             </Button>
           </div>
         </div>

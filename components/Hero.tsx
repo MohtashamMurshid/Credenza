@@ -1,8 +1,6 @@
 import React from "react";
 import Button from "@/components/Button";
-import Image from "next/image";
-import designImage1 from "@/images/design-example-1.png";
-import designImage2 from "@/images/design-example-2.png";
+
 import PointerP from "./Pointer";
 
 export default function Hero() {
@@ -16,12 +14,6 @@ export default function Hero() {
           <PointerP name={"Rayyan"} />
         </div>
 
-        <div className="absolute -left-32 top-16 hidden lg:block">
-          <Image src={designImage1} alt="design Image 1" />
-        </div>
-        <div className="absolute -right-64 -top-16 hidden lg:block">
-          <Image src={designImage2} alt="design Image 2" />
-        </div>
         <div className="flex items-center flex-col">
           <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-600 to to-pink-400 rounded-full text-neutral-950 font-semibold ">
             🔖 We would love to work with You
@@ -30,9 +22,11 @@ export default function Hero() {
             Your Work, Presented Perfectly
           </h1>
           <p className="text-center text-xl text-white/50 mt-6 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            Stand out in the competitive job market with a professional
+            portfolio and resume built effortlessly. At{" "}
+            <span className="font-semibold text-purple-600">Credenza</span> , we
+            provide graduating students with the tools to showcase their skills,
+            achievements, and potential, all in one seamless platform.
           </p>
           <form className="flex border border-white/15 rounded-full p-2 mt-8 max-w-3xl ">
             <input
@@ -43,7 +37,7 @@ export default function Hero() {
             <Button
               variant={"primary"}
               type="submit"
-              className="whitespace-nowrap"
+              className="whitespace-nowrap text-white"
               size="sm"
             >
               Get Started
