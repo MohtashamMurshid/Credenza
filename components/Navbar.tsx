@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import LogoImage from "@/images/reshot-icon-calculator-V72YFDUG3Q.svg";
 import Button from "@/components/Button";
 import { LuExternalLink } from "react-icons/lu";
+import { motion } from "framer-motion";
+
 const navbarLinks = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
@@ -10,7 +13,13 @@ const navbarLinks = [
 ];
 export default function Navbar() {
   return (
-    <section className="py-4 lg:py-8 flex justify-center ">
+    <motion.section
+      className="py-4 lg:py-8 flex justify-center"
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+    >
       <div className="container max-w-5xl">
         <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15 rounded-full p-2 px-4 md:pr-2 items-center">
           <div className="flex flex-row justify-start items-center">
@@ -60,6 +69,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
