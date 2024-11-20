@@ -33,6 +33,7 @@ export function ToolsUsed() {
       viewport={{ once: true }}
       transition={{ duration: 1 }}
       className="mt-20 max-w-4xl items-center mx-auto justify-center"
+      id="tools"
     >
       {/* Heading Section */}
       <motion.div
