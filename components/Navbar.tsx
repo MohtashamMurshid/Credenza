@@ -9,6 +9,7 @@ const navbarLinks = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
   { name: "Tools ", href: "#tools" },
+  { name: "Work", href: "#" },
   { name: "Contact", href: "#contact" },
 ];
 export default function Navbar() {
