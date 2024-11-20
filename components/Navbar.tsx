@@ -61,10 +61,15 @@ export default function Navbar() {
               variant="primary"
               className="hidden md:flex md:gap-2 items-center text-white"
             >
-              Start now{"  "}
-              <span>
-                <LuExternalLink />
-              </span>
+              <a
+                href="https://docs.google.com/forms/d/1c-S8dKDB5245XYebAUcggYvMBQWlmwFUelLTvUB59D4/edit"
+                className="flex gap-2 items-center"
+              >
+                Start now{"  "}
+                <span>
+                  <LuExternalLink />
+                </span>
+              </a>
             </Button>
           </div>
         </div>
