@@ -23,7 +23,7 @@ export default function ContactSection() {
           soon as possible.
         </p>
         <a
-          href="https://forms.gle/your-google-form-link"
+          href="https://docs.google.com/forms/d/1c-S8dKDB5245XYebAUcggYvMBQWlmwFUelLTvUB59D4/edit"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import PointerP from "./Pointer";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -49,7 +50,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-6 max-w-4xl"
+            className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-6 max-w-4xl text-white"
           >
             Your Work, Presented Perfectly
           </motion.h1>
@@ -75,18 +76,13 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.6 }}
             className="flex border border-white/15 rounded-full p-2 mt-8 max-w-3xl"
           >
-            <input
-              type="email"
-              placeholder="Enter Your Email"
-              className="bg-transparent px-4 md:px-10 md:flex-1 focus:outline-none"
-            />
             <Button
               variant={"primary"}
               type="submit"
               className="whitespace-nowrap text-white"
               size="sm"
             >
-              Get Started
+              <Link href="/form">Get Started</Link>
             </Button>
           </motion.form>
         </motion.div>

@@ -4,6 +4,7 @@ import LogoImage from "@/images/reshot-icon-calculator-V72YFDUG3Q.svg";
 import Button from "@/components/Button";
 import { LuExternalLink } from "react-icons/lu";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const navbarLinks = [
   { name: "Home", href: "#" },
@@ -21,9 +22,9 @@ export default function Navbar() {
       viewport={{ once: true }}
       transition={{ duration: 1 }}
     >
-      <div className="container max-w-5xl">
+      <div className="container max-w-5xl ">
         <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15 rounded-full p-2 px-4 md:pr-2 items-center">
-          <div className="flex flex-row justify-start items-center">
+          <div className="flex flex-row justify-start items-center ">
             <Image
               src={LogoImage}
               alt="logo"
@@ -32,7 +33,7 @@ export default function Navbar() {
             <h1 className="font-bold text-2xl text-purple-600">Credenza</h1>
           </div>
           <div className="lg:flex justify-center items-center hidden">
-            <nav className="flex gap-6 font-medium ">
+            <nav className="flex gap-6 font-medium text-white">
               {navbarLinks.map((link) => (
                 <a href={link.href} key={link.name}>
                   {link.name}
@@ -62,15 +63,12 @@ export default function Navbar() {
               variant="primary"
               className="hidden md:flex md:gap-2 items-center text-white"
             >
-              <a
-                href="https://docs.google.com/forms/d/1c-S8dKDB5245XYebAUcggYvMBQWlmwFUelLTvUB59D4/edit"
-                className="flex gap-2 items-center"
-              >
-                Start now{"  "}
+              <Link href="/form" className="flex gap-2 items-center">
+                Dashborad{"  "}
                 <span>
                   <LuExternalLink />
                 </span>
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

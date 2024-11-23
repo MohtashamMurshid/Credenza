@@ -42,11 +42,8 @@ export function ToolsUsed() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
-          Tools{" "}
-          <span className="text-purple-600 hover:text-purple-600 hover:scale-110 transition-transform">
-            Used
-          </span>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
+          Tools Used
         </h1>
         <p className="text-gray-400 text-lg leading-7">
           We use tools like Latex, Next.js, Tailwind CSS, and Overleaf to
